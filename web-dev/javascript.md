@@ -39,3 +39,21 @@ let carRecovered = JSON.parse(localStorage.getItem('car'));
 alert(car.variant);
 ```
 
+### Event handlers
+
+```js
+ removeEntry.addEventListener('click',(e)=>{
+            e.target.parentNode.remove();
+        });
+```
+
+In the above code, `e` is a parameter, that refers back to the event. `e.target` gives us the object on which the event was called. 
+
+#### Removing a DOM element
+
+In recent browsers, DOM elements can be removed directly using,
+
+```js
+elementName.remove();
+```
+
